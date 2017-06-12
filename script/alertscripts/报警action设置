@@ -1,0 +1,28 @@
+
+
+报警设置
+ZABBIX_大兴环境
+告警类型: PROBLEM
+服务器群组: {TRIGGER.HOSTGROUP.NAME}
+服务器IP: {HOST.IP}
+告警项目: {ITEM.KEY}
+问题描述:  {TRIGGER.NAME}
+{ITEM.VALUE} {ITEM.KEY}
+监控项状态: {TRIGGER.SEVERITY}
+触发时间:{DATE} {TIME}
+
+恢复设置
+ZABBIX_大兴环境
+告警恢复: {TRIGGER.STATUS}
+服务器群组: {TRIGGER.HOSTGROUP.NAME}
+服务器IP: {HOST.IP}
+告警项目: {ITEM.KEY}
+监控项输出信息:
+1. {ITEM.NAME1} ({HOST.NAME1}:{ITEM.KEY1}): {ITEM.VALUE1}
+触发时间:{DATE} {TIME}
+
+
+脚本参数
+{ALERT.SENDTO}
+{ALERT.SUBJECT}
+{ALERT.MESSAGE}
